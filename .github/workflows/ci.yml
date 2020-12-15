@@ -27,7 +27,7 @@ jobs:
       with:
           image: erichaiyang/java-ci
           tags: ${{ GITHUB_SHA }}, latest
-          registry: registry-url.io
+          registry: docker.io
           dockerfile: Dockerfile.ci
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
